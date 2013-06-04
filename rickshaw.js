@@ -2064,7 +2064,7 @@ Rickshaw.Graph.Legend = function(args) {
 
 		var swatch = document.createElement('div');
 		swatch.className = 'swatch';
-		swatch.style.backgroundColor = series.color;
+		swatch.style.backgroundColor = series.stroke || series.color;
 
 		line.appendChild(swatch);
 
